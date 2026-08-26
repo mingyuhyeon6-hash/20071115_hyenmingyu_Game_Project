@@ -1,0 +1,15 @@
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\bin\Debug\net10.0\jagibalpyo.exe
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\bin\Debug\net10.0\jagibalpyo.deps.json
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\bin\Debug\net10.0\jagibalpyo.runtimeconfig.json
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\bin\Debug\net10.0\jagibalpyo.dll
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\bin\Debug\net10.0\jagibalpyo.pdb
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.AssemblyInfoInputs.cache
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.AssemblyInfo.cs
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.csproj.CoreCompileInputs.cache
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.sourcelink.json
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.dll
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\refint\jagibalpyo.dll
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.pdb
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\jagibalpyo.genruntimeconfig.cache
+C:\Users\user\c# practice\20071115_hyenmingyu_Game_Project\jagibalpyo\obj\Debug\net10.0\ref\jagibalpyo.dll
