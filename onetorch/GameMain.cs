@@ -9,12 +9,23 @@ class GameMain : G2AppBase
 	public override System.Drawing.Size ScreenSize => GameGlobal.ScreenSize;
 	public override string GameName => GameGlobal.GameName;
 
-	protected override void Initialize()
+	private G2Texture _bgTexture = null!;
+    private G2Texture _torchTexture = null!;
+
+	private G2Font _fntMessage = null!;	
+
+
+    protected override void Initialize()
 	{
 		//---------------------------------------
 		// 게임 관련 객체를 생성합니다.
 		//---------------------------------------
-	}
+		// 파일 경로/리소스 이름은 실제 값으로 변경
+    	_bgTexture = new G2Texture("resource/background/map.png");
+        _torchTexture = new G2Texture("resource/item/torch.png");
+
+		_fntMessage = null;
+    }
 
 	protected override void Update()
 	{
@@ -36,7 +47,10 @@ class GameMain : G2AppBase
 		//---------------------------------------
 		// 게임 관련 객체를 렌더링 합니다.
 		//---------------------------------------
-	}
+		_bgTexture?.Draw();
+        _torchTexture?.Draw();
+		_fntMessage?.Draw();
+    }
 
 	public override void Dispose()
 	{
@@ -44,5 +58,8 @@ class GameMain : G2AppBase
 		//---------------------------------------
 		// 게임 관련 객체를 해제합니다.
 		//---------------------------------------
-	}
+		_bgTexture?.Dispose();
+		_torchTexture?.Dispose();
+
+    }
 }
