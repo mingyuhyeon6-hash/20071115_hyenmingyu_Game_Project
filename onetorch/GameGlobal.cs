@@ -4,6 +4,6 @@
 
 public static class GameGlobal
 {
-	public static readonly System.Drawing.Size ScreenSize = new(748, 540);
-	public static readonly string GameName = "My casual Game";
+	public static readonly System.Drawing.Size ScreenSize = new(960, 540);
+	public static readonly string GameName = "ONE TORCH";
 }
