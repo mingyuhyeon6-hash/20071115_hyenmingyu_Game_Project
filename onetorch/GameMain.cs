@@ -16,7 +16,7 @@ class GameMain : G2AppBase
     private G2Font _timeFont = null!;
     private ID2D1SolidColorBrush _panelBrush = null!;
 
-    // 스프라이트 시트의 첫 번째 64 × 64 칸만 사용합니다.
+  
     private static readonly Rect SpriteFrame = new(0, 0, 64, 64);
     private static readonly Color4 TextColor = new(0.94f, 0.91f, 0.82f, 1);
 
@@ -52,12 +52,12 @@ class GameMain : G2AppBase
             return;
         }
 
-        // 748 × 540 배경과 기존 배치를 원본 비율 그대로 화면 중앙에 표시합니다.
+        
         var screenTransform = RenderTarget.Transform;
         RenderTarget.Transform = System.Numerics.Matrix3x2.CreateTranslation(106, 0) * screenTransform;
         _bgTexture.Draw();
 
-        // 횃불이 포함된 주인공을 중앙에, 적을 주변에 고정 배치합니다.
+        
         DrawCharacter(_playerTexture, 374, 270);
         DrawCharacter(_enemyTexture, 232, 174);
         DrawCharacter(_enemyTexture, 505, 192);
@@ -65,7 +65,7 @@ class GameMain : G2AppBase
         DrawCharacter(_enemyTexture, 521, 361);
 
         RenderTarget.FillRectangle(new Rect(0, 0, 748, 66), _panelBrush);
-        // 원본 이미지의 큰 여백을 제외한 바 영역을 같은 비율로 표시합니다.
+       
         _torchBarTexture.Draw(new Rect(22, 18, 280, 29), new Rect(94, 246, 1984, 206));
         _labelFont.DrawText("생존 시간", new Rect(330, 7, 130, 20), TextColor);
         _timeFont.DrawText("00:00", new Rect(330, 28, 130, 32), TextColor);
