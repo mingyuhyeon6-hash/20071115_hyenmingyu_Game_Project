@@ -42,5 +42,18 @@ public static class TorchAudioGenerator
             }
             return drone * swell + air + bell;
         });
+        GenerateSpawn(directory);
+    }
+
+    public static void GenerateSpawn(string directory)
+    {
+        Directory.CreateDirectory(directory);
+        // 짧고 부드러운 저음. 양 끝을 0으로 감싸 클릭 잡음과 날카로운 고음을 피합니다.
+        const double duration = 0.28;
+        Write(Path.Combine(directory, "monster-spawn.wav"), duration, t => {
+            double envelope = Math.Pow(Math.Sin(Math.PI * t / duration), 2);
+            double fallingTone = Math.Sin(2 * Math.PI * (185 * t - 90 * t * t));
+            return 0.12 * envelope * (0.75 * fallingTone + 0.2 * Sin(277, t) + 0.05 * Sin(370, t));
+        });
     }
 }

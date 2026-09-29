@@ -74,6 +74,12 @@ class G2AudioSound : IDisposable
 		return _sourceVoice.State.BuffersQueued > 0;
 	}
 
+	// 1은 원본 음량이며 조용한 원본은 최대 4배까지 증폭할 수 있습니다.
+	public void SetVolume(float volume)
+	{
+		_sourceVoice.SetVolume(Math.Clamp(float.IsFinite(volume) ? volume : 0, 0, 4));
+	}
+
 	public void Stop()
 	{
 		_sourceVoice.Stop();

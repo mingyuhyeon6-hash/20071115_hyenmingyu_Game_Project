@@ -17,6 +17,7 @@ abstract class G2AppBase : IDisposable
 	public ID2D1HwndRenderTarget RenderTarget => _graphics.RenderTarget;
 	public IDWriteFactory DWriteFactory => _graphics.DWriteFactory;
 	public G2InputContext Input => _inputContext;
+	public bool IsActive => _mainForm.ContainsFocus && _mainForm.WindowState != FormWindowState.Minimized;
 
 	public virtual System.Drawing.Size ScreenSize => new(640, 480);
 	public virtual string GameName => "G2 Game";
